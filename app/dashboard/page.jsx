@@ -2,6 +2,7 @@
 import React from 'react'
 import AddNewInterview from './_component/AddNewInterview'
 import AddNewInterview1 from './_component/AddNewInterview1'
+import InterviewList from './_component/InterviewList'
 
 
 
@@ -13,6 +14,7 @@ function Dashboard() {
       <div className='grid grid-cols-1 md:grid-cols-3 my-5 '>
         <AddNewInterview/>
       </div> 
+      <InterviewList/>
       
     </div>
   )

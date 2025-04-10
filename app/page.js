@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import HeroSection from "./dashboard/_component/HeroSection";
+import Testimonial from "./Testimonial";
 
 export default function Home() {
   return (
     <div>
-      <h1>hello</h1>
-      <Button>subscribe</Button>
+      
+      <HeroSection/>
+      {/* <Testimonial/> */}
     </div>
   );
 }

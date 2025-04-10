@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="447" height="92" viewBox="0 0 447 92">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 60.26px;
+        font-family: "Lilita One";
+      }
+
+      .cls-1 {
+        fill: #a855f7;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #a855f7;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+        stroke-opacity: 0.94;
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="MOCK" class="cls-1" transform="translate(8.246 69.103) scale(1.062)">MOCK</text>
+  <text id="MATE_AI" data-name="MATE AI" class="cls-2" transform="translate(200.039 66.089) scale(0.972)">MATE AI</text>
+  <path class="cls-3" d="M194.452,14.557h241.1V75.443h-241.1V14.557h0Z"/>
+</svg>
