@@ -104,13 +104,13 @@ function RecordAnswerSection({ mockInterviewQuestion, activeQuestionIndex, inter
             <StopCircle /> Stop Recording
           </h2>
         ) : (
-          <h2 className="text-primary flex gap-2 items-center">
+          <h2 className="text-purple-600 flex gap-2 items-center">
             <Mic /> Record Answer
           </h2>
         )}
       </Button>
 
-      <Button onClick={() => console.log(userAnswer)}>Show Answer</Button>
+      {/* <Button onClick={() => console.log(userAnswer)}>Show Answer</Button> */}
     </div>
   );
 }

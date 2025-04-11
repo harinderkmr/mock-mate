@@ -1,36 +1,27 @@
-import { Lightbulb, Volume2 } from 'lucide-react';
-import React from 'react'
+import { Lightbulb, Volume2 } from "lucide-react";
+import React from "react";
 
-function QuestionsSection({mockInterviewQuestion, activeQuestionIndex}) {
-    
-    const textToSpeech = (text)=>{
-        if('speechSynthesis' in window){
-            const speech=new SpeechSynthesisUtterance(text);
-            window.speechSynthesis.speak(speech);
-        }
-        else{
-            alert('Sorry, Your browser does not support Text to speech');
-        }
+function QuestionsSection({ mockInterviewQuestion, activeQuestionIndex }) {
+  const textToSpeech = (text) => {
+    if ("speechSynthesis" in window) {
+      const speech = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(speech);
+    } else {
+      alert("Sorry, Your browser does not support Text to speech");
     }
+  };
   return (
     mockInterviewQuestion && (
       <div className="p-5 border my-9 rounded-lg">
-        {/* <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
-            {mockInterviewQuestion&&mockInterviewQuestion.map((question,index)=>(
-                <h2 className={`p-2 bg-secondary rounded-full text-xs 
-                md:text-sm text-center cursor-pointer ${activeQuestionIndex==index&&'bg-primary text-white'} `}>Question #{index+1} </h2>
-            ))}
-            
-        </div> */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {mockInterviewQuestion &&
             mockInterviewQuestion.map((question, index) => (
               <h2
                 key={index} // ✅ Key added
-                className={`p-2 bg-secondary rounded-full text-xs 
-        md:text-sm text-center cursor-pointer ${
-          activeQuestionIndex === index && "bg-blue-600 text-white"
-        }`}
+                className={`p-2 rounded-full text-xs md:text-sm text-center cursor-pointer
+                  ${activeQuestionIndex === index ? "bg-purple-600 text-white" : "bg-secondary"}
+                `}
+                
               >
                 Question #{index + 1}
               </h2>
@@ -61,4 +52,4 @@ function QuestionsSection({mockInterviewQuestion, activeQuestionIndex}) {
   );
 }
 
-export default QuestionsSection
+export default QuestionsSection;

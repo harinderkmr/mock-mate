@@ -74,7 +74,7 @@ function Header2() {
                 Home
               </li>
             </Link>
-            <Link href="/Features">
+            <Link href="#features" >
               <li
                 className={`hover:text-purple-500 hover:font-bold transition-all cursor-pointer 
                 ${path === "/Features" && "text-purple-500 font-bold"}`}

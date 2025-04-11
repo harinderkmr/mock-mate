@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
       animation: {
         marquee: "marquee var(--duration, 30s) linear infinite",
       },
@@ -32,7 +36,7 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "#A855F7",
+          DEFAULT: "#9333EA",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {

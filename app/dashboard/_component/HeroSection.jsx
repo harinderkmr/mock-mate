@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import AnimatedHeading1 from "./AnimatedHeading1";
 
 
 function HeroSection() {
@@ -16,18 +17,19 @@ function HeroSection() {
           crossOrigin="anonymous"
           referrerpolicy="no-referrer"
         />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </Head>
 
       <main className=" flex flex-col lg:flex-row items-center justify-between py-4 lg:py-0  px-8 lg:px-8">
         <div className="text-center lg:text-left lg:w-1/2 space-y-4 lg:pl-8">
-          <h2 className="text-4xl lg:text-6xl font-bold text-purple-500  ">
+          {/* <h2 className="text-4xl lg:text-6xl font-bold text-purple-500  ">
             Mock Mate,{" "}
             <span className="text-gray-800">Placements Simplified!!!</span>
-          </h2>
+          </h2> */}
+          <AnimatedHeading1/>
           <Link href="/sign-up">
             <button className="bg-purple-500 text-white mt-10 mb-6 px-6 py-3 rounded-full text-lg  border-2 border-purple-500 transition-all duration-300 hover:bg-white hover:text-purple-500 hover:font-bold">
               Sign Up for Free
