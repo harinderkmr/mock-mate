@@ -1,37 +1,34 @@
 const items = [
-    {
-      name: "Sophia Martinez",
-      title: "Lead designer, Avalon",
-      image:
-        "https://images.generated.photos/TdA_3xKb49DtgqfPPu5REnQFiALErCu6i3M2I_1AqIA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAwNTU5LmpwZw.jpg",
-      body: "I've been in the design game for a while now and this kit is one of the best. It's made me fall in love with designing all over again. It's just brilliant.",
-    },
-    {
-      name: "Caroline Lee",
-      title: "Senior Graphic Designer, Echo",
-      image:
-        "https://images.generated.photos/mp3gkB9z2wwhyySWzQJMegNbvvLV6HbKQX1_h6BEYAc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAwOTI5LmpwZw.jpg",
-      body: "I'm a newbie designer and this kit is just perfect. I've learnt so much and my work looks amazing now. A big thumbs up!",
-    },
-    {
-      name: "Tyler Otwell",
-      title: "CTO, Apple",
-      image:
-        "https://images.generated.photos/vOkveSlBohR880A8z67aLHImhPr7UHdnXg06pifYvZ4/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAyNjg4LmpwZw.jpg",
-      body: "This design kit is a game changer! My designs look better and I get things done faster. Totally recommending it to my mates!",
-    },
-    {
-      name: "Jake Harris",
-      title: "Thompson Creative",
-      image:
-        "https://images.generated.photos/d_r3VzW3lO5ZsdaHhoVX7msWku7YIrqP4Qn1yozJU54/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDAyMTQ4LmpwZw.jpg",
-      body: "I'm a newbie designer and this kit is just perfect. I've learnt so much and my work looks amazing now. A big thumbs up!",
-    },
-  ]
+  {
+    name: "Aarav Mehta",
+    title: "Software Engineer, Infosys",
+    image: "/college-boy-black.png",
+    body: "MockMate helped me polish my interview answers and get real-time feedback. After just a week of practice, I cracked two interviews back to back!",
+  },
+  {
+    name: "Sneha Iyer",
+    title: "UI/UX Designer, Zoho",
+    image: "/student-girl.png",
+    body: "As a fresh graduate, I lacked confidence. MockMate gave me realistic mock interviews and personalized tips. I finally felt ready—and I landed my dream job!",
+  },
+  {
+    name: "Rajiv Nair",
+    title: "Senior Developer, TCS",
+    image: "/indian-men-thinking.png",
+    body: "MockMate’s tech interview prep is solid. I used it to prep for a role switch to backend development and aced my internal interviews.",
+  },
+  {
+    name: "Priya Sharma",
+    title: "Product Analyst, Flipkart",
+    image: "/girl-handbag.png",
+    body: "MockMate helped me track my progress with clear analytics after each mock session. It made a huge difference in my preparation strategy.",
+  },
+];
+
   
   export default function Testimonial() {
     return (
-      <div className="relative flex py-10 w-screen items-center bg-purple-100  ">
+      <div className="relative flex py-5 w-full items-center bg-purple-100  ">
         
         <div className="relative flex max-w-[100vw] overflow-hidden py-5 ">
           <div className="flex w-max animate-marquee [--duration:30s] hover:[animation-play-state:paused]">

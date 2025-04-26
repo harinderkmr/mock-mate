@@ -19,7 +19,7 @@ function Upgrade() {
           </h2>
   
           <p className="mt-2 sm:mt-4">
-            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> {item.price}$ </strong>
+            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> {item.price} Rs </strong>
   
             <span className="text-sm font-medium text-gray-700"> {item.duration} </span>
           </p>
