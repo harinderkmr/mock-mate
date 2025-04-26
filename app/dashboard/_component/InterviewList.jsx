@@ -29,8 +29,8 @@ function InterviewList() {
   };
 
   return (
-    <div>
-      <h2 className="font-medium text-xl">Previous Mock Interviews</h2>
+    <div  >
+      <h2 className="font-medium text-xl text-purple-900 mt-4 mb-3">Previous Mock Interviews</h2>
       <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-5">
         {interviewList.length > 0 ? (
           interviewList.map((Interview) => (

@@ -19,13 +19,14 @@ function Header2() {
   const navItems = isLoaded && isSignedIn ? [
     { href: "/", label: "Home" },
     { href: "/dashboard", label: "Dashboard" },
-    { href: "/dashboard/Questions", label: "Questions" },
+    { href: "/dashboard/questions", label: "Questions" },
     { href: "/dashboard/upgrade", label: "Upgrade" },
-    { href: `/dashboard/interview/${interviewId}/feedback`, label: "Feedback" },  // Dynamic Feedback URL
+    { href: "/pages/feedback", label: "Feedback" }
+    //{ href: `/dashboard/interview/${interviewId}/feedback`, label: "Feedback" } // Dynamic Feedback URL
   ] : [
     { href: "/", label: "Home" },
     { href: "#features", label: "Features" },
-    { href: "/dashboard/Questions", label: "Questions" },
+    { href: "/dashboard/questions", label: "Questions" },
     { href: "/dashboard/upgrade", label: "Upgrade" },
     { href: "/dashboard/how-it-works", label: "How it works" },
   ];

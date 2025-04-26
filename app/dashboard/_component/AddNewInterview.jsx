@@ -84,10 +84,14 @@ function AddNewInterview() {
     <div>
       {/* Button to open the dialog for adding a new interview */}
       <div
-        className="p-10 border rounded-lg bg-secondary hover:scale-105 hover:shadow-md cursor-pointer transition-all"
+        className="p-10 border rounded-lg bg-purple-100 shadow-lg duration-300 hover:scale-105 hover:shadow-md cursor-pointer transition-all"
         onClick={() => setOpenDailog(true)}
       >
-        <h2 className="text-center"> +Add New </h2>
+        <div className="flex justify-center items-center ">
+          <span className="bg-purple-200 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">
+            Add New+
+          </span>
+        </div>
       </div>
       
       {/* Dialog component for adding job details */}
