@@ -21,7 +21,7 @@ export default function Page() {
           
         </div>
         </SignedOut>
-        <h1>Already SignedUp</h1>
+        {/* <h1>Already SignedUp</h1> */}
       </main>
     </div>
   );
