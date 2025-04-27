@@ -91,20 +91,20 @@ function RecordAnswerSection({ mockInterviewQuestion, activeQuestionIndex, inter
   };
 
   return (
-    <div className="flex items-center justify-center flex-col">
-      <div className="flex flex-col justify-center items-center bg-black rounded-lg p-5 my-9">
+    <div className="flex items-center justify-start flex-col ">
+      <div className="flex flex-col justify-center items-center bg-black rounded-lg p-5 my-9 ">
         <Image src="/webcam.png" alt="webcam" width={200} height={200}  className='absolute' />
 
         <Webcam mirrored={true} style={{ height: 400, width: "100%", zIndex: 10 }} />
       </div>
       
-      <Button disabled={loading} variant="outline" className="mb-4" onClick={StartStopRecording}>
+      <Button disabled={loading} variant="outline" className="mb-2 hover:bg-green-400" onClick={StartStopRecording}>
         {isRecording ? (
           <h2 className="text-red-600 flex gap-2">
             <StopCircle /> Stop Recording
           </h2>
         ) : (
-          <h2 className="text-purple-600 flex gap-2 items-center">
+          <h2 className="text-purple-600 flex gap-2 items-center ">
             <Mic /> Record Answer
           </h2>
         )}

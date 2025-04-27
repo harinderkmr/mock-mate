@@ -44,7 +44,7 @@ function StartInterview({ params }) {
   }, [mockInterviewQuestion]); // ✅ Runs when state changes
 
   return (
-    <div>
+    <div  >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10  ">
         {/* Question */}
         <QuestionsSection
@@ -60,7 +60,7 @@ function StartInterview({ params }) {
         />
       </div>
 
-      <div className="flex">
+      <div className="flex  ">
         <div className="lg:w-1/2 "></div>
         <div className="lg:w-1/2 flex justify-between ">
           <div className="ml-6">
@@ -72,7 +72,7 @@ function StartInterview({ params }) {
               </Button>
             )}
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 ">
             {activeQuestionIndex !== mockInterviewQuestion?.length - 1 && (
               <Button
                 onClick={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
