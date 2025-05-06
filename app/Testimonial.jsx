@@ -28,12 +28,19 @@ const items = [
   
   export default function Testimonial() {
     return (
-      <div className="relative flex py-5 w-full items-center bg-purple-100  ">
+      <div className="relative flex flex-col py-5 w-full items-center bg-purple-100  ">
+        <div className="text-center mb-6">
+        <h1 className="text-4xl font-bold text-purple-900">Happy Users</h1>
+        <p className="text-lg text-gray-600 mt-2">who transformed their interview prep with MockMate</p>
+      </div>
+        
         
         <div className="relative flex max-w-[100vw] overflow-hidden py-5 ">
+          
           <div className="flex w-max animate-marquee [--duration:30s] hover:[animation-play-state:paused]">
             {[...items, ...items].map((item, index) => (
               <div key={index} className="h-full px-2.5">
+                
                 <div className="relative h-full w-[28rem] rounded-2xl border border-purple-600 bg-white/10 px-8 py-6 bg-slate-50 shadow-lg ">
                   <div className="pb-4 font-light text-black">{item.body}</div>
   
