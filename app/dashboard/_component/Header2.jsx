@@ -11,7 +11,7 @@ function Header2() {
   const { isSignedIn, isLoaded, user } = useUser();  // Assuming `user` contains the interviewId
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isPublicPage = path === "/" || path === "/sign-in" || path === "/sign-up";
+  const isPublicPage = path === "/" || path === "/sign-in" || path === "/sign-up" ;
 
   // Assuming you have interviewId stored in user object, you can use it like this
   const interviewId = user?.id || "default-interview-id";  // Replace with actual logic to get interview ID
@@ -28,7 +28,7 @@ function Header2() {
     { href: "#features", label: "Features" },
     { href: "/dashboard/questions", label: "Questions" },
     { href: "/dashboard/upgrade", label: "Upgrade" },
-    { href: "/dashboard/how-it-works", label: "How it works" },
+    { href: "/pages/how-it-works", label: "How it works" },
   ];
 
   return (
