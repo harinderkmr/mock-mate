@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
@@ -8,9 +9,10 @@ const Footer = () => {
         
         {/* Logo + Tagline */}
         <div className="h-full flex flex-col items-center md:items-start justify-start">
-          <h2 className="text-2xl font-bold tracking-wide hover:animate-pulse cursor-pointer">
-            MockMate
+        <h2 className="text-2xl font-bold tracking-wide hover:animate-pulse cursor-pointer"><Link href="/" className="hover:text-white transition duration-300">
+            MockMate</Link>
           </h2>
+          
           <p className="mt-2 text-sm text-purple-200">
             Level up your interviews with AI-powered mock sessions.
           </p>
@@ -20,10 +22,10 @@ const Footer = () => {
         <div className="h-full flex flex-col items-center md:items-start justify-start pl-4">
           <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
           <ul className="space-y-4 pl-1 text-sm text-purple-200  ">
-            <li><a href="#" className="hover:text-white transition duration-300">Home</a></li>
-            <li><a href="#" className="hover:text-white transition duration-300">Features</a></li>
-            <li><a href="#" className="hover:text-white transition duration-300">About</a></li>
-            <li><a href="#" className="hover:text-white transition duration-300">Contact</a></li>
+            <li><Link href="/" className="hover:text-white transition duration-300">Home</Link></li>
+            <li><a href="#features" className="hover:text-white transition duration-300">Features</a></li>
+            <li><Link href="/pages/contactus" className="hover:text-white transition duration-300">ContactUs</Link></li>
+            <li><a href="https://github.com/harinderkmr" className="hover:text-white transition duration-300">Developer</a></li>
           </ul>
         </div>
 
@@ -34,8 +36,8 @@ const Footer = () => {
 
           <div className="flex justify-center md:justify-start gap-4 text-xl">
             <a href="#" className="hover:text-pink-300 transition"><FaTwitter /></a>
-            <a href="#" className="hover:text-blue-300 transition"><FaLinkedin /></a>
-            <a href="#" className="hover:text-gray-300 transition"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/harinder-kumar07/" className="hover:text-blue-300 transition"><FaLinkedin /></a>
+            <a href="https://github.com/harinderkmr" className="hover:text-gray-300 transition"><FaGithub /></a>
           </div>
 
           <form className="mt-3 w-full max-w-xs">
